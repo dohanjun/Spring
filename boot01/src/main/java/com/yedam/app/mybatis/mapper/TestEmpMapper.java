@@ -8,10 +8,7 @@ import com.yedam.app.mybatis.service.EmpInfo;
 
 @Mapper
 public interface TestEmpMapper {
-	// EmpDAO = EmpMapper
-	
+	// EmpDAO => EmpMapper
 	// 전체조회
 	public List<EmpInfo> empList();
-	
-	// 
 }

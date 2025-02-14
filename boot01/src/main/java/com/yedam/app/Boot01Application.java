@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages="com.yedam.app.**.mapper")
+@MapperScan(basePackages = "com.yedam.app.**.mapper")
 public class Boot01Application {
 
 	public static void main(String[] args) {

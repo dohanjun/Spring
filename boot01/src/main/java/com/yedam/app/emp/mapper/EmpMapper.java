@@ -11,11 +11,12 @@ public interface EmpMapper {
 	public List<EmpVO> selectEmpList();
 	// 단건조회
 	public EmpVO selectEmpInfo(EmpVO empVO);
+	
 	// DML => 리턴타입 int
 	// 등록
 	public int insertEmpInfo(EmpVO empVO);
 	// 수정
-	public int updateEmpInfo(EmpVO empVO);	
+	public int updateEmpInfo(EmpVO empVO);
 	// 삭제
 	public int deleteEmpInfo(int empId);
 }
