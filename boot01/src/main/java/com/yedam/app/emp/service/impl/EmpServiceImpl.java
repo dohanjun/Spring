@@ -15,7 +15,7 @@ import com.yedam.app.emp.service.EmpVO;
 public class EmpServiceImpl implements EmpService {
 	// DB가 필요한 경우 Mapper는 여러개가 가능
 	private EmpMapper empMapper;
-	
+
 	@Autowired
 	EmpServiceImpl(EmpMapper empMapper) {
 		this.empMapper = empMapper;

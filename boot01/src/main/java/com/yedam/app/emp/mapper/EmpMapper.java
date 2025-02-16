@@ -11,7 +11,7 @@ public interface EmpMapper {
 	public List<EmpVO> selectEmpList();
 	// 단건조회
 	public EmpVO selectEmpInfo(EmpVO empVO);
-	
+
 	// DML => 리턴타입 int
 	// 등록
 	public int insertEmpInfo(EmpVO empVO);

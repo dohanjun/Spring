@@ -10,7 +10,7 @@ import com.yedam.app.aop.service.AaaService;
 public class ServiceTests {
 	@Autowired
 	private AaaService aaaService;
-	
+
 	@Test
 	public void Transcational() {
 		aaaService.aaaInsert();

@@ -9,12 +9,12 @@ import com.yedam.app.aop.service.AaaService;
 @Service
 public class AaaServiceImpl implements AaaService {
 	private AaaMapper aaaMapper;
-	
+
 	@Autowired
 	AaaServiceImpl(AaaMapper aaaMapper){
 		this.aaaMapper = aaaMapper;
 	}
-	
+
 	@Transactional // 트랜잭션을 제어
 	@Override
 	public void aaaInsert() {

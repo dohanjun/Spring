@@ -10,7 +10,7 @@ import com.yedam.app.emp.service.EmpVO;
 
 @Controller
 public class TestEmpController {
-	
+
 	@RequestMapping(path="/test", method = RequestMethod.GET)
 	@ResponseBody
 	public String selectKeyword(EmpVO empVO) {

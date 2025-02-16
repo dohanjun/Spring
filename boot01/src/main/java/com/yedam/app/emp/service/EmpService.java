@@ -12,7 +12,7 @@ public interface EmpService {
 	// 등록
 	public int createEmpInfo(EmpVO empVO);
 	// 수정
-	public Map<String, Object> 
+	public Map<String, Object>
 				modifyEmpInfo(EmpVO empVO);
 	// 삭제
 	public Map<String, Object>
