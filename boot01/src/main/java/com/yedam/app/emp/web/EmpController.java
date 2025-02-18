@@ -38,11 +38,16 @@ public class EmpController {
 		model.addAttribute("emps", list);
 	// 3) View
 		return "emp/list";
+		// prifix : classpath:/templates/
+		// suffix : .html
+		
+		// prifix + return + suffix
+		// classpath:/templates/emp/list.html			
 	}
 	
 	// 단건조회 : GET + 전달받을 데이터 => QueryString
 	// 1) URL + METHOD
-	@GetMapping("empInfo")
+	@GetMapping("empInfo") // empInfo?key=value
 	public String empInfo(EmpVO empVO, Model model) {
 		
 	// 2) Service
@@ -51,7 +56,7 @@ public class EmpController {
 		model.addAttribute("emp",findVO);
 	// 3) View
 		return "emp/info";
-	
+	// classpath:/templates/emp/info.html
 	}
 	
 	// 등록 - 페이지 : GET
