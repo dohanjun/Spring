@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org/">
+<html xmlns:th="https://www.thymeleaf.org/"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="~{common/layouts/default_layout}"
+	  layout:fragment="content">
+<!-- /*common/fragments/default_layout *? -->
 <head>
 <meta charset="UTF-8">
-<meta name="contextPath" th:value="${contextPath}">
 <title>사원관리</title>
 <style>
 	table,tr,th,td{

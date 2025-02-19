@@ -64,6 +64,7 @@ public class EmpController {
 	public String empInsertForm() {
 		return "emp/insert";
 	}
+	//classpath:/templates/emp/insert.html
 	
 	//등록 - 처리 : POST => form 태그를 통한 submit
 	// 					=> 이미지가 있는 경우 multipart/form-data
@@ -83,7 +84,7 @@ public class EmpController {
 	
 	
 	// 수정 페이지 :GET	<=>단건조회
-	@GetMapping("empUpdate")
+	@GetMapping("empUpdate") // empUpdate?employeeId=${employeeId}
 	public String empUpdate(EmpVO empVO, Model model) {
 		
 	// 2) Service
@@ -93,11 +94,11 @@ public class EmpController {
 	// 3) View
 		return "emp/Update";
 	
-	}
+	}   //classpath:/templates/emp/Update.html
 	
 	// 수정 -처리 :POST / AJAX => JSON(@RequestBody)
 	@PostMapping("empUpdate")
-	@ResponseBody
+	@ResponseBody // AJAX
 	public Map<String, Object>
 		empUpdateAJAXJSON(@RequestBody EmpVO empVO){
 			return empService.modifyEmpInfo(empVO);
@@ -106,7 +107,7 @@ public class EmpController {
 	
 	
 	// 삭제 - 처리
-	@GetMapping("empDelete")
+	@GetMapping("empDelete") // empDelete?employeeId=100
 	public String empDelete(Integer employeeId) {
 		empService.removeEmpInfo(employeeId);
 		return "redirect:empList";

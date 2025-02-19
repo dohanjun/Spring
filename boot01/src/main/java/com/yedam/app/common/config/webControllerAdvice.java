@@ -13,4 +13,8 @@ public class webControllerAdvice {
 		return request.getContextPath();
 //		${pageContext.request.contextPath}
 	}
+	/*@ExceptionHandler
+	public ResponseEntity<String> handle(IOException ex){
+		
+	}*/
 }
