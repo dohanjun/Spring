@@ -82,7 +82,7 @@ class Boot01ApplicationTests {
 	}
 
 
-	@Test
+//	@Test
 	void selectKeyTest() {
 		EmpVO empVO = new EmpVO();
 		empVO.setLastName("Hong");

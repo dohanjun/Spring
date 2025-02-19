@@ -35,7 +35,7 @@ public class ParamController {
 	@RequestMapping(path="reqparm",
 			method = {RequestMethod.GET, RequestMethod.POST})
 	@ResponseBody
-	public String ReqyestParam
+	public String RequestParam
 	(@RequestParam Integer employeeId,
 					 String lastName,
 	@RequestParam(name="message",
